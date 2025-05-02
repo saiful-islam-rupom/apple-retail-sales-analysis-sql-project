@@ -1,4 +1,4 @@
-![Apple Image](images/apple_image.png)
+![Apple Image](images/apple_image.jpg)
 # Apple Retail Sales Analysis SQL Project
 
 ## Project Overview  
