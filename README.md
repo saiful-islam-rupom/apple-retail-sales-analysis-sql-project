@@ -70,11 +70,11 @@ WHERE sale_date >= '2023-12-01' AND sale_date <= '2023-12-31';
 ```sql
 SELECT COUNT(*)
 FROM stores st
-WHERE st.store_id NOT IN (
-	    				SELECT DISTINCT sa.store_id FROM sales sa
-						RIGHT JOIN warranty w 
-							ON sa.sale_id = w.sale_id
-							);
+WHERE st.store_id NOT IN(
+			SELECT DISTINCT sa.store_id FROM sales sa
+			RIGHT JOIN warranty w 
+			ON sa.sale_id = w.sale_id
+			);
 ```
 ![Solution4](images/solution4.png)
 
